@@ -1,0 +1,34 @@
+version: '2.7'
+
+rpc:
+  listen: tcp://127.0.0.1:6001
+
+logs:
+  level: info
+
+server:
+  command: "php app.php"
+  relay: pipes
+
+kv:
+  local:
+    driver: memory
+    config: {}
+
+jobs:
+  pool:
+    num_workers: 2
+
+service:
+  twitter:
+    command: "php app.php collect:start"
+    remain_after_exit: true
+    restart_sec: 1
+
+grpc:
+  listen: tcp://0.0.0.0:9001
+  proto:
+    - "proto/service.proto"
+
+metrics:
+  address: 0.0.0.0:2112

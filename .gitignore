@@ -1,0 +1,9 @@
+.idea
+vendor
+runtime
+rr*
+spiral*
+.env
+.phpunit.result.cache
+.deptrac.cache
+composer.lock
