@@ -38,6 +38,7 @@ class Kernel extends \Spiral\Framework\Kernel
             RoadRunnerBridge\MetricsBootloader::class,
             RoadRunnerBridge\QueueBootloader::class,
             RoadRunnerBridge\LoggerBootloader::class,
+            RoadRunnerBridge\CacheBootloader::class,
 
             // Core Services
             Framework\SnapshotsBootloader::class,
