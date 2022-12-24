@@ -422,14 +422,5 @@
             }
         ]
     },
-    "time": {
-        "from": "now-30d",
-        "to": "now"
-    },
-    "timepicker": {},
-    "timezone": "",
-    "title": "Docker",
-    "uid": "GGG76xdVz",
-    "version": 10,
-    "weekStart": ""
+    "title": "Docker"
 }
