@@ -18,6 +18,10 @@ It uses GRPC service to manage Docker accounts. GRPC is a high-performance.
 
 We hope you find this package useful!
 
+## Dashboard
+
+![image](https://user-images.githubusercontent.com/773481/209438291-a887500d-7425-4f95-88db-f05261d728e6.png)
+
 ## Usage
 
 ```dotenv
