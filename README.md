@@ -1,5 +1,8 @@
 # Docker metrics collector
 
+![docker](https://user-images.githubusercontent.com/773481/209433247-decbb4f6-e722-4862-8063-d4e4f0bf3c29.png)
+
+
 Welcome to the Docker metrics collector!
 
 This package allows you to easily collect various metrics from Docker, such as downloads, stars and followers.
