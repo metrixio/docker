@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Application\Job;
 
-use App\Application\Bootloader\DockerMetrics;
+use App\Application\Metrics\DockerMetrics;
 use App\Infrastructure\Docker\ClientInterface;
 use Psr\Log\LoggerInterface;
 use Spiral\Exceptions\ExceptionReporterInterface;

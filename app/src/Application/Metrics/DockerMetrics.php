@@ -2,9 +2,8 @@
 
 declare(strict_types=1);
 
-namespace App\Application\Bootloader;
+namespace App\Application\Metrics;
 
-use App\Application\Metrics\DockerCollectors;
 use Spiral\RoadRunner\Metrics\MetricsInterface;
 
 final class DockerMetrics
