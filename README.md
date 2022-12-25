@@ -1,5 +1,8 @@
 # Docker metrics collector
 
+![docker](https://user-images.githubusercontent.com/773481/209433247-decbb4f6-e722-4862-8063-d4e4f0bf3c29.png)
+
+
 Welcome to the Docker metrics collector!
 
 This package allows you to easily collect various metrics from Docker, such as downloads, stars and followers.
@@ -14,6 +17,10 @@ collection to fit your needs.
 It uses GRPC service to manage Docker accounts. GRPC is a high-performance.
 
 We hope you find this package useful!
+
+## Dashboard
+
+![image](https://user-images.githubusercontent.com/773481/209438291-a887500d-7425-4f95-88db-f05261d728e6.png)
 
 ## Usage
 
