@@ -40,5 +40,4 @@ jobs:
           build-args:
             APP_VERSION=${{ steps.previoustag.outputs.tag }}
           tags:
-          tags:
             ghcr.io/metrixio/docker:latest, ghcr.io/metrixio/docker:${{ steps.previoustag.outputs.tag }}
