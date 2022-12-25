@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace App\Api\Cli;
 
-use App\Application\DockerCollectors;
+use App\Application\DockerRepositoryRegistry;
 use App\Application\Job\DockerDataCollector;
 use App\Application\Metrics\Collector;
-use App\Application\DockerRepositoryRegistry;
+use App\Application\Metrics\DockerCollectors;
 use Psr\Log\LoggerInterface;
 use Spiral\Console\Command;
 use Spiral\Queue\Options;

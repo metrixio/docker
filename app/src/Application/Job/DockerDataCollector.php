@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace App\Application\Job;
 
+use App\Application\Bootloader\DockerMetrics;
 use App\Infrastructure\Docker\ClientInterface;
 use Psr\Log\LoggerInterface;
 use Spiral\Exceptions\ExceptionReporterInterface;
 use Spiral\Queue\Exception\RetryException;
 use Spiral\Queue\JobHandler;
 use Spiral\Queue\Options;
-use Spiral\RoadRunner\Metrics\MetricsInterface;
 
 final class DockerDataCollector extends JobHandler
 {
@@ -18,7 +18,7 @@ final class DockerDataCollector extends JobHandler
      * @throws RetryException
      */
     public function invoke(
-        MetricsInterface $metrics,
+        DockerMetrics $metrics,
         LoggerInterface $logger,
         ClientInterface $client,
         ExceptionReporterInterface $reporter,
@@ -37,9 +37,9 @@ final class DockerDataCollector extends JobHandler
         try {
             $repository = $client->getRepository($repo);
 
-            $metrics->set('docker_downloads', (float)$repository->downloads, [$repo]);
-            $metrics->set('docker_stars', (float)$repository->stars, [$repo]);
-            $metrics->set('docker_collaborators', (float)$repository->collaborators, [$repo]);
+            $metrics->setDownloadsCount((float)$repository->downloads, $repo);
+            $metrics->setStarsCount((float)$repository->stars, $repo);
+            $metrics->setCollaboratorsCount((float)$repository->stars, $repo);
         } catch (\Throwable $e) {
             $reporter->report($e);
 

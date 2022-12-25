@@ -2,24 +2,27 @@
 
 declare(strict_types=1);
 
-namespace App\Application;
+namespace App\Application\Metrics;
 
-use App\Application\Metrics\CollectorsInterface;
 use Spiral\RoadRunner\Metrics\Collector;
 
 final class DockerCollectors implements CollectorsInterface
 {
+    public const DOWNLOADS = 'docker_downloads';
+    public const STARS = 'docker_stars';
+    public const COLLABORATORS = 'docker_collaborators';
+
     public function getIterator(): \Traversable
     {
-        yield 'docker_downloads' => Collector::gauge()
+        yield self::DOWNLOADS => Collector::gauge()
             ->withHelp('Docker downloads statistics.')
             ->withLabels('repo');
 
-        yield 'docker_stars' => Collector::gauge()
+        yield self::STARS => Collector::gauge()
             ->withHelp('Docker stars statistics.')
             ->withLabels('repo');
 
-        yield 'docker_collaborators' => Collector::gauge()
+        yield self::COLLABORATORS => Collector::gauge()
             ->withHelp('Docker collaborators statistics.')
             ->withLabels('repo');
     }

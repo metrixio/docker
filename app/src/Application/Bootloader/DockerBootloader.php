@@ -23,12 +23,10 @@ final class DockerBootloader extends Bootloader
     private function initDockerRegistry(
         DockerConfigRepository $configRepository,
         DockerEvnRepository $envRepository,
-        DockerCacheRepository $cacheRepository
     ): DockerRepositoryRegistry {
         $accounts = \array_merge(
             $configRepository->all(),
             $envRepository->all(),
-            $cacheRepository->all(),
         );
 
         return new DockerRepositoryRegistry(

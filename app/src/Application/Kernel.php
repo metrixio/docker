@@ -34,11 +34,9 @@ class Kernel extends \Spiral\Framework\Kernel
             Bootloader\ExceptionHandlerBootloader::class,
 
             // RoadRunner
-            RoadRunnerBridge\GRPCBootloader::class,
             RoadRunnerBridge\MetricsBootloader::class,
             RoadRunnerBridge\QueueBootloader::class,
             RoadRunnerBridge\LoggerBootloader::class,
-            RoadRunnerBridge\CacheBootloader::class,
 
             // Core Services
             Framework\SnapshotsBootloader::class,

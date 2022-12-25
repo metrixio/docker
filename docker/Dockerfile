@@ -9,7 +9,7 @@ ARG BRANCH=master
 RUN git clone -b $BRANCH $REPOSITORY /app
 
 # Configure PHP project
-FROM spiralscout/php81-grpc:1.0.0
+FROM ghcr.io/metrixio/php81-alpine:latest
 
 COPY --from=git /app /app
 COPY --from=rr /usr/bin/rr /app
