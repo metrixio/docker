@@ -3,20 +3,9 @@
 ![docker](https://user-images.githubusercontent.com/773481/209433247-decbb4f6-e722-4862-8063-d4e4f0bf3c29.png)
 
 
-Welcome to the Docker metrics collector!
+This tool lets you easily gather data about downloads, stars, and followers from Docker. You can use it to track the performance of your own account or gather data for research or analysis purposes. It works with Prometheus and Grafana to collect data from Docker, store it in Prometheus, and create visualizations with Grafana. You can use Grafana to customize the data you collect and create dashboards that fit your needs.
 
-This package allows you to easily collect various metrics from Docker, such as downloads, stars and followers.
-With this tool, you can track the performance of your own Docker account, or gather data for research or
-analysis purposes.
-
-It is designed to work seamlessly with Prometheus and Grafana. It will collect data from Docker and send it to
-Prometheus for storage, and then use Grafana to visualize the data in beautiful and informative dashboards. Grafana
-offers a variety of options for filtering and specifying the data you want to collect, so you can customize your metrics
-collection to fit your needs.
-
-It uses GRPC service to manage Docker accounts. GRPC is a high-performance.
-
-We hope you find this package useful!
+We hope you find it helpful!
 
 ## Dashboard
 
@@ -26,7 +15,7 @@ We hope you find this package useful!
 
 ```dotenv
 # Docker repository names to follow (comma separated)
-DOCKER_REPOSITORIES=
+DOCKER_REPOSITORIES= ...
 ```
 
 ### Docker
@@ -38,7 +27,7 @@ services:
   docker-metrics:
     image: ghcr.io/metrixio/docker:latest
     environment:
-        DOCKER_REPOSITORIES:...
+        DOCKER_REPOSITORIES: ...
     restart: on-failure
 
   prometheus:
