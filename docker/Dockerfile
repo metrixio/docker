@@ -23,7 +23,7 @@ WORKDIR /app
 RUN composer config --no-plugins allow-plugins.spiral/composer-publish-plugin false
 RUN composer install --no-dev
 
-EXPOSE 9001/tcp
+EXPOSE 6001/tcp
 EXPOSE 2112/tcp
 
 LABEL org.opencontainers.image.source=$REPOSITORY
