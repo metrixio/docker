@@ -3,7 +3,9 @@
 ![docker](https://user-images.githubusercontent.com/773481/209433247-decbb4f6-e722-4862-8063-d4e4f0bf3c29.png)
 
 
-This tool lets you easily gather data about downloads, stars, and followers from Docker. It works with Prometheus and Grafana to collect data from Docker, store it in Prometheus, and create visualizations with Grafana. You can use Grafana to customize the data you collect and create dashboards that fit your needs.
+This tool lets you easily gather data about downloads, stars, and followers from Docker Hub. 
+
+It works with Prometheus and Grafana to collect data from Docker, store it in Prometheus, and create visualizations with Grafana. You can use Grafana to customize the data you collect and create dashboards that fit your needs.
 
 We hope you find it helpful!
 
