@@ -1,5 +1,10 @@
 # Docker metrics collector
 
+<a href="https://packagist.org/packages/metrixio/docker"><img src="https://poser.pugx.org/metrixio/docker/require/php"></a>
+<a href="https://packagist.org/packages/metrixio/docker"><img src="https://poser.pugx.org/metrixio/docker/version"></a>
+<a href="https://github.com/metrixio/docker/actions"><img src="https://github.com/metrixio/docker/actions/workflows/docker-image.yml/badge.svg"></a>
+<a href="https://packagist.org/packages/metrixio/docker"><img src="https://poser.pugx.org/metrixio/docker/downloads"></a>
+
 ![docker](https://user-images.githubusercontent.com/773481/209433247-decbb4f6-e722-4862-8063-d4e4f0bf3c29.png)
 
 
