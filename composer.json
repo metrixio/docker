@@ -1,8 +1,8 @@
 {
-    "name": "metrixop/docker",
+    "name": "metrixio/docker",
     "type": "project",
     "license": "MIT",
-    "description": "Docker metrics collector",
+    "description": "This tool lets you easily gather data about downloads, stars, and followers from Docker. It works with Prometheus and Grafana to collect data.",
     "homepage": "https://github.com/metrixio/docker",
     "support": {
         "issues": "https://github.com/metrixio/docker/issues",
