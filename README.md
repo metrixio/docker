@@ -51,6 +51,24 @@ services:
     restart: always
 ```
 
+### Local server
+
+```bash
+composer create-project metrixio/docker
+```
+
+Define the repositories you want to track in `.env` file
+
+```dotenv
+DOCKER_REPOSITORIES=spiral/roadrunner,...
+```
+
+Once the project is installed and configured you can start application server:
+
+```bash
+./rr serve
+```
+
 -----
 
 The package is built with some of the best tools out there for PHP. It's powered by [Spiral Framework](https://github.com/spiral/framework/), which makes it super fast and efficient, and it uses [RoadRunner](https://github.com/roadrunner-server/roadrunner) as the server, which is a really great tool for collecting metrics data for Prometheus.
