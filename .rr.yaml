@@ -20,7 +20,7 @@ jobs:
     num_workers: 2
 
 service:
-  twitter:
+  collector:
     command: "php app.php collect:start"
     remain_after_exit: true
     restart_sec: 1
