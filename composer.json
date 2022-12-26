@@ -43,7 +43,6 @@
     "scripts": {
         "post-create-project-cmd": [
             "php -r \"copy('.env.sample', '.env');\"",
-            "php app.php encrypt:key -m .env",
             "php app.php configure -vv",
             "rr get-binary"
         ]
