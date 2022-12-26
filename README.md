@@ -13,6 +13,8 @@ We hope you find it helpful!
 
 ## Usage
 
+Check out the documentation in the [dashboard](https://github.com/metrixio/dashboard) repository. That should give you all the details you need to get going.
+
 ```dotenv
 # Docker repository names to follow (comma separated)
 DOCKER_REPOSITORIES= ...
